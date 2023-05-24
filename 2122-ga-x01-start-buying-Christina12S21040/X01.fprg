@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-11 02:32:16 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtUEREMlMxUlQ7MjAyMS0xMC0xMTswMTo0OTo0OSBQTTsyNjY4"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtUEREMlMxUlQ7MjAyMS0xMC0xMTswMjozMjoxNiBQTTsxOzI3NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="KodeISBN, Buku" type="String" array="False" size=""/>
+            <declare name="Price, NilaiTransaksi" type="Real" array="False" size=""/>
+            <assign variable="NilaiTransaksi" expression="0"/>
+            <declare name="Quantity" type="Integer" array="False" size=""/>
+            <assign variable="Buku" expression="&quot;Terjual Semua&quot;"/>
+            <while expression="Buku=&quot;Terjual Semua&quot;">
+                <input variable="KodeISBN"/>
+                <if expression="KodeISBN==&quot;---&quot;">
+                    <then>
+                        <assign variable="Buku" expression="&quot;Terjual Sebagian&quot;"/>
+                    </then>
+                    <else>
+                        <input variable="Price"/>
+                        <input variable="Quantity"/>
+                        <assign variable="NilaiTransaksi" expression="NilaiTransaksi+(Price*Quantity)"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="ToFixed(NilaiTransaksi, 2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

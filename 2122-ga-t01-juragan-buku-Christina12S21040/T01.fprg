@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-15 05:16:46 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtUEREMlMxUlQ7MjAyMS0wOS0xNTswNDoyMDo1MiBQTTsyNjY2"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtUEREMlMxUlQ7MjAyMS0wOS0xNTswNToxNjo0NiBQTTszOzI3ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="stokBuku" type="Integer" array="False" size=""/>
+            <declare name="KodeISBN, JudulBuku, NamaPenulis, TahunTerbit, NamaPenerbit, FormatBuku" type="String" array="False" size=""/>
+            <declare name="HargaPembelian, MinimumMargin, Rating" type="Real" array="False" size=""/>
+            <input variable="KodeISBN"/>
+            <input variable="JudulBuku"/>
+            <input variable="NamaPenulis"/>
+            <input variable="TahunTerbit"/>
+            <input variable="NamaPenerbit"/>
+            <input variable="FormatBuku"/>
+            <input variable="HargaPembelian"/>
+            <input variable="MinimumMargin"/>
+            <input variable="stokBuku"/>
+            <input variable="Rating"/>
+            <output expression="KodeISBN&amp;&quot;|&quot;&amp;JudulBuku&amp;&quot;|&quot;&amp;NamaPenulis&amp;&quot;|&quot;&amp;TahunTerbit&amp;&quot;|&quot;&amp;NamaPenerbit&amp;&quot;|&quot;&amp;FormatBuku&amp;&quot;|&quot;&amp;HargaPembelian&amp;&quot;|&quot;&amp;MinimumMargin&amp;&quot;|&quot;&amp;stokBuku&amp;&quot;|&quot;&amp;Rating" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

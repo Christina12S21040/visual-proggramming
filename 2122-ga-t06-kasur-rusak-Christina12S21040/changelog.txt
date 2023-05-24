@@ -1,0 +1,5 @@
+Kami telah mencoba menyelesaikan masalah
+Kami telah memperbaiki flowgorithm kami,karena ada salah penulisan variabel
+Kami telah memperbaiki penamaan kami pada visual code
+Kami telah memperbaiki flowgorithm kami
+Kami telah memperbaiki output kami
